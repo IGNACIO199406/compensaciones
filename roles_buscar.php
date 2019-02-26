@@ -24,6 +24,7 @@ $_SESSION['Busqueda_Tablas']=$q;
       $sWhere = substr_replace( $sWhere, "", -3 );
       $sWhere .= ')';
     }
+    //contenido  aaa
     include 'pagination.php';
     $page = (isset($_REQUEST['page']) && !empty($_REQUEST['page']))?$_REQUEST['page']:1;
     $per_page = 6; 
